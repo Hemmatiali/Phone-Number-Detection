@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberDetection", "PhoneNumberDetection.csproj", "{88E7E89B-F9F2-47A7-99B4-C779F3FC1101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberDetection.Tests", "..\PhoneNumberDetection.Tests\PhoneNumberDetection.Tests.csproj", "{513CB8BD-CC44-440F-B565-7ED23DDC952D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88E7E89B-F9F2-47A7-99B4-C779F3FC1101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E7E89B-F9F2-47A7-99B4-C779F3FC1101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E7E89B-F9F2-47A7-99B4-C779F3FC1101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E7E89B-F9F2-47A7-99B4-C779F3FC1101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513CB8BD-CC44-440F-B565-7ED23DDC952D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513CB8BD-CC44-440F-B565-7ED23DDC952D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513CB8BD-CC44-440F-B565-7ED23DDC952D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513CB8BD-CC44-440F-B565-7ED23DDC952D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B97127D-FEBB-4572-B732-DC95B314252F}
+	EndGlobalSection
+EndGlobal

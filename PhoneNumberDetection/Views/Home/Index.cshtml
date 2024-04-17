@@ -1,0 +1,52 @@
+﻿@model (IEnumerable<PhoneNumberDetection.Models.PhoneNumber> detectedNumbers, string errorMessage)
+
+<h1>Phone Number Detection</h1>
+
+<form method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+    <input type="text" name="inputText" placeholder="Enter your text here" />
+    <button type="submit">Detect Phone Numbers (Text)</button>
+
+    <div class="mt-3"> Or upload a text file:</div>
+    <input type="file" name="file" />
+    <button type="submit">Detect Phone Numbers (File)</button>
+</form>
+
+@if (Model.errorMessage != null)
+{
+    <div class="error-message">@Model.errorMessage</div>
+}
+else if (Model.detectedNumbers != null)
+{
+    <h2 class="mt-5">Detected Phone Numbers:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Format</th>
+                <th>Country Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var number in Model.detectedNumbers)
+            {
+                <tr>
+                    <td>@number.Number</td>
+                    <td>@number.Format</td>
+                    <td>@number.CountryCode</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<script>
+    function validateForm() {
+        var inputText = document.forms[0]["inputText"].value;  // Get values
+        var inputFile = document.forms[0]["file"].value;
+
+        if (inputText == "" && inputFile == "") {
+            alert("Please enter some text or choose a file.");
+            return false;  // Prevent form submission
+        }
+        return true;   // Allow submission if there's input
+    }
+</script>
