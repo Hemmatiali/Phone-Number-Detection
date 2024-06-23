@@ -70,5 +70,4 @@ Detected Phone Numbers:
 The code is thoroughly documented with comments explaining the functionality of each component and method. Clear instructions are provided on how to build, run, and use the application.
 
 ## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
